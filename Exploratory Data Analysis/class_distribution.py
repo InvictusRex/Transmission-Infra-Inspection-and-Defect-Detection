@@ -6,7 +6,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 
-JSON_DIR = Path("../../Dataset")
+JSON_DIR = Path("../../Dataset/json_labels")
 
 class_counter = Counter()
 total_objects = 0
@@ -54,10 +54,6 @@ print("=" * 60)
 print(f"Total Classes : {len(df)}")
 print(f"Total Objects : {total_objects}")
 
-df.to_csv("class_distribution.csv", index=False)
-
-print("\nSaved class_distribution.csv")
-
 plt.figure(figsize=(14,8))
 
 plt.bar(df["Class"], df["Count"])
@@ -72,8 +68,4 @@ plt.title("Class Distribution")
 
 plt.tight_layout()
 
-plt.savefig("class_distribution.png", dpi=300)
-
 plt.show()
-
-print("Saved class_distribution.png")
