@@ -5,7 +5,7 @@ from collections import defaultdict
 
 random.seed(42)
 
-DATASET_DIR = Path("../../Dataset")
+DATASET_DIR = Path("../../../Dataset")
 
 IMAGE_DIR = DATASET_DIR / "images"
 LABEL_DIR = DATASET_DIR / "labels"

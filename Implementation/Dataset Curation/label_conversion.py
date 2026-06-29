@@ -1,9 +1,9 @@
 import json
 from pathlib import Path
 
-IMAGE_DIR = Path("../../Dataset/images")
-JSON_DIR = Path("../../Dataset/json_labels")
-LABEL_DIR = Path("../../Dataset/labels")
+IMAGE_DIR = Path("../../../Dataset/images")
+JSON_DIR = Path("../../../Dataset/json_labels")
+LABEL_DIR = Path("../../../Dataset/labels")
 
 LABEL_DIR.mkdir(exist_ok=True)
 

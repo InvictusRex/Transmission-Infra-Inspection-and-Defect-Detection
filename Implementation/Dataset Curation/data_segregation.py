@@ -1,7 +1,7 @@
 from pathlib import Path
 import shutil
 
-DATASET_DIR = Path("../../Dataset")
+DATASET_DIR = Path("../../../Dataset")
 
 IMAGE_DIR = DATASET_DIR / "images"
 JSON_DIR = DATASET_DIR / "json_labels"
